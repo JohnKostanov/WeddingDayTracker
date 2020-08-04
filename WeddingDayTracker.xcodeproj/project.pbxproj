@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		52CB283324D953A2001F5511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB283224D953A2001F5511 /* AppDelegate.swift */; };
 		52CB283524D953A2001F5511 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB283424D953A2001F5511 /* SceneDelegate.swift */; };
-		52CB283724D953A2001F5511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB283624D953A2001F5511 /* ViewController.swift */; };
 		52CB283A24D953A2001F5511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CB283824D953A2001F5511 /* Main.storyboard */; };
 		52CB283D24D953A2001F5511 /* WeddingDayTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52CB283B24D953A2001F5511 /* WeddingDayTracker.xcdatamodeld */; };
 		52CB283F24D953A3001F5511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52CB283E24D953A3001F5511 /* Assets.xcassets */; };
 		52CB284224D953A3001F5511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CB284024D953A3001F5511 /* LaunchScreen.storyboard */; };
+		52CB284A24D97F91001F5511 /* WeddingDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB284924D97F91001F5511 /* WeddingDay.swift */; };
+		52CB284C24D98519001F5511 /* AddWeddingDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB284B24D98519001F5511 /* AddWeddingDayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		52CB282F24D953A2001F5511 /* WeddingDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeddingDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CB283224D953A2001F5511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CB283424D953A2001F5511 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		52CB283624D953A2001F5511 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		52CB283924D953A2001F5511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52CB283C24D953A2001F5511 /* WeddingDayTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeddingDayTracker.xcdatamodel; sourceTree = "<group>"; };
 		52CB283E24D953A3001F5511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52CB284124D953A3001F5511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52CB284324D953A3001F5511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52CB284924D97F91001F5511 /* WeddingDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingDay.swift; sourceTree = "<group>"; };
+		52CB284B24D98519001F5511 /* AddWeddingDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeddingDayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,8 @@
 			children = (
 				52CB283224D953A2001F5511 /* AppDelegate.swift */,
 				52CB283424D953A2001F5511 /* SceneDelegate.swift */,
-				52CB283624D953A2001F5511 /* ViewController.swift */,
+				52CB284924D97F91001F5511 /* WeddingDay.swift */,
+				52CB284B24D98519001F5511 /* AddWeddingDayViewController.swift */,
 				52CB283824D953A2001F5511 /* Main.storyboard */,
 				52CB283E24D953A3001F5511 /* Assets.xcassets */,
 				52CB284024D953A3001F5511 /* LaunchScreen.storyboard */,
@@ -141,9 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52CB283724D953A2001F5511 /* ViewController.swift in Sources */,
 				52CB283324D953A2001F5511 /* AppDelegate.swift in Sources */,
 				52CB283D24D953A2001F5511 /* WeddingDayTracker.xcdatamodeld in Sources */,
+				52CB284C24D98519001F5511 /* AddWeddingDayViewController.swift in Sources */,
+				52CB284A24D97F91001F5511 /* WeddingDay.swift in Sources */,
 				52CB283524D953A2001F5511 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

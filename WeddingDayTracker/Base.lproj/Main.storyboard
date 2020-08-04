@@ -45,7 +45,7 @@
         <!--Add Wedding Day-->
         <scene sceneID="diA-hX-gED">
             <objects>
-                <viewController id="gQZ-fM-Gso" sceneMemberID="viewController">
+                <viewController id="gQZ-fM-Gso" customClass="AddWeddingDayViewController" customModule="WeddingDay" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2RF-WN-3bO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -114,9 +114,22 @@
                         <viewLayoutGuide key="safeArea" id="2g9-O4-RbG"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Wedding Day" id="R11-pM-gi0">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="8YS-X0-ohq"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="GzJ-rM-KR5"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="8YS-X0-ohq">
+                            <connections>
+                                <action selector="cancelTapped:" destination="gQZ-fM-Gso" id="U4t-3f-lTU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="GzJ-rM-KR5">
+                            <connections>
+                                <action selector="saveTapped:" destination="gQZ-fM-Gso" id="vEI-2o-8To"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="firstNameTextField" destination="2cz-v2-2HX" id="QY8-LH-KLC"/>
+                        <outlet property="lastNameTextField" destination="M9g-5l-Wcg" id="7TB-rR-2x9"/>
+                        <outlet property="weddingDatePicker" destination="Key-Bb-Toe" id="LaB-SL-2Bz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jnl-aZ-DM2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
