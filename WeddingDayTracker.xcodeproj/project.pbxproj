@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		52CB282F24D953A2001F5511 /* WeddingDayTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeddingDayTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CB282F24D953A2001F5511 /* WeddingDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeddingDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CB283224D953A2001F5511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52CB283424D953A2001F5511 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		52CB283624D953A2001F5511 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		52CB283024D953A2001F5511 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				52CB282F24D953A2001F5511 /* WeddingDayTracker.app */,
+				52CB282F24D953A2001F5511 /* WeddingDay.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,7 +87,7 @@
 			);
 			name = WeddingDayTracker;
 			productName = WeddingDayTracker;
-			productReference = 52CB282F24D953A2001F5511 /* WeddingDayTracker.app */;
+			productReference = 52CB282F24D953A2001F5511 /* WeddingDay.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -296,7 +296,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "John-Kostanov.WeddingDayTracker";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WeddingDay;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,7 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "John-Kostanov.WeddingDayTracker";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WeddingDay;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

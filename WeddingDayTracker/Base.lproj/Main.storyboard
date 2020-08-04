@@ -1,24 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e5d-tU-hKx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--WeddingDays-->
+        <scene sceneID="f28-nz-baX">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="XgH-vj-Ucy" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="fVa-7h-d82">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="FKI-9b-esa">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FKI-9b-esa" id="ZYa-dd-kB2">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="XgH-vj-Ucy" id="iZa-gO-azI"/>
+                            <outlet property="delegate" destination="XgH-vj-Ucy" id="oWf-77-tTY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="WeddingDays" id="AiR-nQ-wDa">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="2Em-rE-uVP">
+                            <connections>
+                                <segue destination="yXH-SV-y37" kind="presentation" id="rmE-xu-zmd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J1S-50-SCq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="544.92753623188412" y="93.75"/>
+        </scene>
+        <!--Add Wedding Day-->
+        <scene sceneID="diA-hX-gED">
+            <objects>
+                <viewController id="gQZ-fM-Gso" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2RF-WN-3bO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имена" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qfj-3V-Itj">
+                                <rect key="frame" x="20" y="156" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPB-ig-R8R">
+                                <rect key="frame" x="20" y="226" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата свадьбы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Prx-Tq-Qgb">
+                                <rect key="frame" x="20" y="306" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="пр. Александр и Светлана" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2cz-v2-2HX">
+                                <rect key="frame" x="20" y="184" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ju8-h1-L8h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="пр. Ивановы" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M9g-5l-Wcg">
+                                <rect key="frame" x="20" y="254" width="335" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="axH-09-zWf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Key-Bb-Toe">
+                                <rect key="frame" x="0.0" y="337" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="618232045.89962399">
+                                    <!--2020-08-04 11:07:25 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Qfj-3V-Itj" firstAttribute="leading" secondItem="2cz-v2-2HX" secondAttribute="leading" id="1RS-Ka-6cs"/>
+                            <constraint firstItem="M9g-5l-Wcg" firstAttribute="top" secondItem="hPB-ig-R8R" secondAttribute="bottom" constant="7" id="4m3-vo-Lwu"/>
+                            <constraint firstItem="Qfj-3V-Itj" firstAttribute="trailing" secondItem="hPB-ig-R8R" secondAttribute="trailing" id="6Eo-py-gfg"/>
+                            <constraint firstItem="2g9-O4-RbG" firstAttribute="trailing" secondItem="2cz-v2-2HX" secondAttribute="trailing" constant="59" id="6sg-kR-adF"/>
+                            <constraint firstItem="hPB-ig-R8R" firstAttribute="leading" secondItem="M9g-5l-Wcg" secondAttribute="leading" id="8GN-Dg-a0I"/>
+                            <constraint firstItem="2cz-v2-2HX" firstAttribute="leading" secondItem="hPB-ig-R8R" secondAttribute="leading" id="D0d-h2-eOk"/>
+                            <constraint firstItem="Qfj-3V-Itj" firstAttribute="leading" secondItem="2RF-WN-3bO" secondAttribute="leadingMargin" id="Iz3-UY-dcz"/>
+                            <constraint firstItem="2cz-v2-2HX" firstAttribute="top" secondItem="Qfj-3V-Itj" secondAttribute="bottom" constant="7" id="MuY-Vx-Z4R"/>
+                            <constraint firstItem="Prx-Tq-Qgb" firstAttribute="top" secondItem="M9g-5l-Wcg" secondAttribute="bottom" constant="22" id="Ne4-Ab-cPW"/>
+                            <constraint firstItem="hPB-ig-R8R" firstAttribute="top" secondItem="2cz-v2-2HX" secondAttribute="bottom" constant="12" id="ONZ-Uf-M7Y"/>
+                            <constraint firstItem="Key-Bb-Toe" firstAttribute="leading" secondItem="2g9-O4-RbG" secondAttribute="leading" id="e6g-if-xa8"/>
+                            <constraint firstItem="Qfj-3V-Itj" firstAttribute="top" secondItem="2g9-O4-RbG" secondAttribute="top" constant="100" id="hQR-gx-tuX"/>
+                            <constraint firstItem="2g9-O4-RbG" firstAttribute="trailing" secondItem="Prx-Tq-Qgb" secondAttribute="trailing" constant="274" id="k9Q-VP-IND"/>
+                            <constraint firstItem="Key-Bb-Toe" firstAttribute="top" secondItem="Prx-Tq-Qgb" secondAttribute="bottom" constant="10" id="lwu-pJ-KYQ"/>
+                            <constraint firstItem="2g9-O4-RbG" firstAttribute="trailing" secondItem="Qfj-3V-Itj" secondAttribute="trailing" constant="294" id="tTU-o4-Ss1"/>
+                            <constraint firstItem="2cz-v2-2HX" firstAttribute="trailing" secondItem="M9g-5l-Wcg" secondAttribute="trailing" id="w1n-Au-sB6"/>
+                            <constraint firstItem="M9g-5l-Wcg" firstAttribute="leading" secondItem="Prx-Tq-Qgb" secondAttribute="leading" id="xVw-pr-zUN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2g9-O4-RbG"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Wedding Day" id="R11-pM-gi0">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="8YS-X0-ohq"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="GzJ-rM-KR5"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jnl-aZ-DM2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2257.971014492754" y="94.419642857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tPE-zP-vdd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e5d-tU-hKx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TUe-cy-NXV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XgH-vj-Ucy" kind="relationship" relationship="rootViewController" id="mG7-j1-88Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SIt-k0-isZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-365.21739130434787" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pqN-Fm-asf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yXH-SV-y37" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cn4-aR-l5d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gQZ-fM-Gso" kind="relationship" relationship="rootViewController" id="x7K-Hs-ggF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JAp-uV-AOD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1347.8260869565217" y="94.419642857142847"/>
         </scene>
     </scenes>
 </document>
