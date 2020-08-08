@@ -15,6 +15,7 @@
 		52CB284224D953A3001F5511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CB284024D953A3001F5511 /* LaunchScreen.storyboard */; };
 		52CB284A24D97F91001F5511 /* WeddingDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB284924D97F91001F5511 /* WeddingDay.swift */; };
 		52CB284C24D98519001F5511 /* AddWeddingDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CB284B24D98519001F5511 /* AddWeddingDayViewController.swift */; };
+		52FADC1324DEC58800ABEB03 /* WeddingDaysTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52FADC1224DEC58800ABEB03 /* WeddingDaysTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		52CB284324D953A3001F5511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52CB284924D97F91001F5511 /* WeddingDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingDay.swift; sourceTree = "<group>"; };
 		52CB284B24D98519001F5511 /* AddWeddingDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeddingDayViewController.swift; sourceTree = "<group>"; };
+		52FADC1224DEC58800ABEB03 /* WeddingDaysTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingDaysTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				52CB283224D953A2001F5511 /* AppDelegate.swift */,
 				52CB283424D953A2001F5511 /* SceneDelegate.swift */,
 				52CB284924D97F91001F5511 /* WeddingDay.swift */,
+				52FADC1224DEC58800ABEB03 /* WeddingDaysTableVC.swift */,
 				52CB284B24D98519001F5511 /* AddWeddingDayViewController.swift */,
 				52CB283824D953A2001F5511 /* Main.storyboard */,
 				52CB283E24D953A3001F5511 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 				52CB284C24D98519001F5511 /* AddWeddingDayViewController.swift in Sources */,
 				52CB284A24D97F91001F5511 /* WeddingDay.swift in Sources */,
 				52CB283524D953A2001F5511 /* SceneDelegate.swift in Sources */,
+				52FADC1324DEC58800ABEB03 /* WeddingDaysTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
